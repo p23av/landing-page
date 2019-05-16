@@ -1,0 +1,34 @@
+#hero {
+	height: 100vh;
+	background: url("../img/hero-img.png") center/cover no-repeat;
+	position: relative;
+	z-index: 0;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(#000, 0.5);
+		z-index: -1;
+	}
+	.title-description {
+		color: #ffffff;
+		font-size: 40px;
+		letter-spacing: -1px;
+		line-height: 46px;
+	}
+	.title {
+		margin-top: 60px;
+		font-size: 75px;
+		line-height: 75px;
+		text-transform: uppercase;
+		letter-spacing: -1.88px;
+		color: #ffffff;
+	}
+	.button {
+		margin-top: 60px;
+	}
+
+}

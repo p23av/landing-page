@@ -1,0 +1,74 @@
+#team {
+	padding: 120px 0;
+	background-color: #f9f9f9;
+	.team-slider {
+		margin-top: 80px;
+		&-item {
+			text-align: center;
+			.img {
+				height: 220px;
+				width: 220px;
+				border-radius: 100%;
+				margin: 0 auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				img {
+					display: inline-block;
+					min-height: 100%;
+					min-width: 100%;
+				}
+			}
+			figcaption {
+				margin-top: 20px;
+				.title {
+					font-size: 16px;
+					letter-spacing: -0.4px;
+				}
+				.text {
+					color: #777777;
+					font-size: 14px;
+					letter-spacing: -0.35px;
+					margin-top: 8px;
+					line-height: normal;
+				}
+				.links {
+					margin-top: 14px;
+				}
+			}
+		}
+	}
+	.bottom-text {
+		text-align: center;
+		color: #777777;
+		letter-spacing: -0.4px;
+		margin-top: 50px;
+	}
+}
+
+.icon {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border: 3px solid #222222;
+	border-radius: 100%;
+	margin: 0 4px;
+	padding: 7px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-origin: content-box;
+	&-twitter {
+		background-image: url("../img/twitter-brands.svg");
+	}
+	&-facebook {
+		background-image: url("../img/facebook-f-brands.svg");
+	}
+	&-pinterest {
+		background-image: url("../img/pinterest-p-brands.svg");
+	}
+	&-google {
+		background-image: url("../img/google-plus-g-brands.svg");
+	}
+}

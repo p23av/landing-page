@@ -1,0 +1,49 @@
+#services {
+	padding: 120px 0;
+	.services {
+		margin-top: 80px;
+		overflow: hidden;
+		&-item {
+			width: 280px;
+			margin: 0 auto;
+			text-align: center;
+			opacity: 0;
+			transform: translateX(-100px);
+			transition-property: transform, opacity;
+			transition-duration: 0.5s;
+			transition-timing-function: ease-in-out;
+			.img {
+				height: 68px;
+				width: 68px;
+				border: 3px solid #fed136;
+				border-radius: 100%;
+				margin: 0 auto;
+				padding: 15px;
+				background-origin: content-box;
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				&.commerce {
+					background-image: url("../img/services-1.svg");
+				}
+				&.responsive{
+					background-image: url("../img/services-2.svg");
+				}
+				&.security {
+					background-image: url("../img/services-3.svg");
+				}
+			}
+			.title {
+				margin-top: 28px;
+				font-size: 18px;
+				letter-spacing: -0.54px;
+			}
+			.text {
+				color: #777;
+				font-size: 14px;
+				letter-spacing: -0.35px;
+				margin-top: 18px;
+			}
+		}
+	}
+}

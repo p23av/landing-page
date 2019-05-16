@@ -1,0 +1,280 @@
+doctype html
+html(lang="ru")
+	include modules/head
+	body
+		include modules/header
+		.scroll-box
+			span скролл:
+			i
+			br
+			span начало:
+			i
+			br
+			span конец:
+			i
+		section#hero.d-flex.flex-column.align-items-center.justify-content-center
+			.container
+				.headline
+					p.title-description Welcome To Our Studio!
+					h1.title I's nice to Meet you
+				a.button(href='#contact') Tell Me More
+		section#services
+			.container
+				.headline
+					h2.title Services
+					p.title-description Proin iaculis purus consequat sem cure.
+				.services
+					.row
+						.col-12.col-lg-4
+							figure.services-item
+								.img.commerce
+								figcaption
+									h3.title E-Commerce
+									p.text
+										| Proin iaculis purus consequat sem cure
+										br
+										| digni ssim. Donec porttitora entum suscipit
+										br
+										| aenean rhoncus posuere odio in tincidunt.
+						.col-12.col-lg-4
+							figure.services-item
+								.img.responsive
+								figcaption
+									h3.title Responsive Web
+									p.text
+										| Proin iaculis purus consequat sem cure
+										br
+										| digni ssim. Donec porttitora entum suscipit
+										br
+										| aenean rhoncus posuere odio in tincidunt.
+						.col-12.col-lg-4
+							figure.services-item
+								.img.security
+								h3.title Web Security
+								p.text
+									| Proin iaculis purus consequat sem cure
+									br
+									| digni ssim. Donec porttitora entum suscipit
+									br
+									| aenean rhoncus posuere odio in tincidunt.
+		section#portfolio
+			.container
+				.headline
+					h2.title our portfolio
+					p.title-description Proin iaculis purus consequat sem cure.
+				.work-slider.owl-carousel.owl-theme
+					figure.work-slider-item
+						.img
+							img(src='/img/work-1.png' srcset="/img/work-1@2x.png 2x" alt='Ebony & Ivory')
+						figcaption
+							h3.title Ebony & Ivory
+							p.title-description Branding
+					figure.work-slider-item
+						.img
+							img(src='/img/work-2.png' srcset="/img/work-2@2x.png 2x" alt='Smart Stationary')
+						figcaption
+							h3.title Smart Stationary
+							p.title-description Print Design
+					figure.work-slider-item
+						.img
+							img(src='/img/work-3.png' srcset="/img/work-3@2x.png 2x" alt='Clever Poster')
+						figcaption
+							h3.title Clever Poster
+							p.title-description Print Design
+					figure.work-slider-item
+						.img
+							img(src='/img/work-4.png' srcset="/img/work-4@2x.png 2x" alt='Vinyl Record')
+						figcaption
+							h3.title Vinyl Record
+							p.title-description Product Mock-Up
+					figure.work-slider-item
+						.img
+							img(src='/img/work-5.png' srcset="/img/work-5@2x.png 2x" alt='Treehouse Template')
+						figcaption
+							h3.title Treehouse Template
+							p.title-description Web Design
+					figure.work-slider-item
+						.img
+							img(src='/img/work-6.png' srcset="/img/work-6@2x.png 2x" alt='Burned Logo')
+						figcaption
+							h3.title Burned Logo
+							p.title-description Branding
+		section#about
+			.container
+				.headline
+					h2.title about us
+					p.title-description Proin iaculis purus consequat sem cure.
+				.about-item
+					.img
+					.about-item-text
+						h2.title
+							span July 2010
+							br
+							|  Our Humble Beginnings
+						p.text
+							| Proin iaculis purus consequat sem cure
+							br
+							| digni ssim. Donec porttitora entum suscipit
+							br
+							| aenean rhoncus posuere odio in tincidunt. Proin
+							br
+							| iaculis purus consequat sem cure digni
+							br
+							| ssim. Donec porttitora entum suscipit.
+				.about-item
+					.img
+					.about-item-text
+						h2.title
+							span January 2011
+							br
+							|  Facing Startup Battles
+						p.text
+							| Proin iaculis purus consequat sem cure
+							br
+							| digni ssim. Donec porttitora entum suscipit
+							br
+							| aenean rhoncus posuere odio in tincidunt. Proin
+							br
+							| iaculis purus consequat sem cure digni
+							br
+							| ssim. Donec porttitora entum suscipit aenean
+							br
+							| rhoncus posuere odio in tincidunt.
+				.about-item
+					.img
+					.about-item-text
+						h2.title
+							span December 2012
+							br
+							|  Enter The Dark Days
+						p.text
+							| Proin iaculis purus consequat sem cure
+							br
+							| digni ssim. Donec porttitora entum suscipit
+							br
+							| aenean rhoncus posuere odio in tincidunt. Proin
+							br
+							| iaculis purus consequat sem cure digni.
+				.about-item
+					.img
+					.about-item-text
+						h2.title
+							span february 2014
+							br
+							|  Our Triumph
+						p.text
+							| Proin iaculis purus consequat sem cure
+							br
+							| digni ssim. Donec porttitora entum suscipit
+							br
+							| aenean rhoncus posuere odio in tincidunt. Proin
+							br
+							| iaculis purus consequat sem cure digni
+							br
+							| ssim. Donec porttitora entum suscipit aenean.
+				.about-item
+					.continues.d-flex.align-items-center.justify-content-center
+						p
+							| Our
+							br
+							| Story
+							br
+							| Continues
+							br
+							| ...
+		section#team
+			.container
+				.headline
+					h2.title our amazing team
+					p.title-description Proin iaculis purus consequat sem cure.
+				.team-slider.owl-carousel.owl-theme
+					figure.team-slider-item
+						.img
+							img(src="/img/Container.png" srcset="/img/Container@2x.png 2x" alt="")
+						figcaption
+							h3.title Kimberly Thompson
+							p.text Marketer
+							.links
+								a.icon.icon-twitter(href="#")
+								a.icon.icon-facebook(href="#")
+								a.icon.icon-pinterest(href="#")
+					figure.team-slider-item
+						.img
+							img(src="/img/Container.png" srcset="/img/Container@2x.png 2x" alt="")
+						figcaption
+							h3.title Rico Massimo
+							p.text Coder
+							.links
+								a.icon.icon-twitter(href="#")
+								a.icon.icon-facebook(href="#")
+								a.icon.icon-google(href="#")
+					figure.team-slider-item
+						.img
+							img(src="/img/Container.png" srcset="/img/Container@2x.png 2x" alt="")
+						figcaption
+							h3.title Uku Mason
+							p.text Graphic Designer
+							.links
+								a.icon.icon-facebook(href="#")
+								a.icon.icon-pinterest(href="#")
+					figure.team-slider-item
+						.img
+							img(src="/img/Container.png" srcset="/img/Container@2x.png 2x" alt="")
+						figcaption
+							h3.title Kimberly Thompson
+							p.text Marketer
+							.links
+								a.icon.icon-twitter(href="#")
+								a.icon.icon-facebook(href="#")
+								a.icon.icon-pinterest(href="#")
+					figure.team-slider-item
+						.img
+							img(src="/img/Container.png" srcset="/img/Container@2x.png 2x" alt="")
+						figcaption
+							h3.title Rico Massimo
+							p.text Coder
+							.links
+								a.icon.icon-twitter(href="#")
+								a.icon.icon-facebook(href="#")
+								a.icon.icon-google(href="#")
+					figure.team-slider-item
+						.img
+							img(src="/img/Container.png" srcset="/img/Container@2x.png 2x" alt="")
+						figcaption
+							h3.title Uku Mason
+							p.text Graphic Designer
+							.links
+								a.icon.icon-facebook(href="#")
+								a.icon.icon-pinterest(href="#")
+				p.bottom-text
+					| Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
+					br
+					| aenean rhoncus posuere odio in tincidunt proin iaculis.
+		section#contact.d-flex.align-items-center
+			.container.d-flex.flex-column
+				.headline
+					h2.title contact us
+					p.title-description Proin iaculis purus consequat sem cure.
+				form#form.cd-form.floating-labels(method='post')
+					.row
+						.col-12.col-lg-6
+							fieldset.one
+								.item
+									label.cd-label(for='cd-name') YOUR NAME
+									input#cd-name.user(name='cd-name', autocomplete='off', type='text', required value="")
+									span
+								.item
+									label.cd-label(for='cd-mail') YOUR E-MAIL
+									input#cd-mail(name='cd-mail', type='text', autocomplete='off', required value="")
+									span
+								.item
+									label.cd-label(for='cd-subject') YOUR PHONE
+									input#cd-subject(name='cd-subject', type='text', autocomplete='off' required value="")
+						.col-12.col-lg-6
+							fieldset.two
+								.item
+									label.cd-label(for='cd-message') YOUR MESSAGE
+									textarea#cd-message(form='form' name='cd-message', cols='30', rows='10' required)
+					button.button.title(type='submit') Send Message
+		include modules/footer
+		script(src="js/scripts.min.js")

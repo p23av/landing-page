@@ -1,0 +1,18 @@
+@import "_mixins/font-face";
+
+
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+
+@include font-face("ProximaNova-Regular", "../fonts/ProximaNovaRegular/ProximaNova-Regular");
+@include font-face("ProximaNova-Semibold", "../fonts/ProximaNovaSemibold/ProximaNova-Semibold", semibold);
+@include font-face("ProximaNova-Bold", "../fonts/ProximaNovaBold/ProximaNova-Bold", bold);
+
+@include font-face("roboto-slab", "../fonts/RobotoSlab/RobotoSlab-Regular");
+
+@include font-face("montserrat", "../fonts/Montserrat/Montserrat-Regular");
+@include font-face("montserrat", "../fonts/Montserrat/Montserrat-Bold", bold);
+
+@include font-face("droid-serif", "../fonts/DroidSerif/DroidSerif-Italic", italic);
+

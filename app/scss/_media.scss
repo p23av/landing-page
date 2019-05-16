@@ -1,0 +1,197 @@
+@import "vars";
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	#hero {
+		background: url("../img/hero-img@2x.png") center/cover no-repeat;
+	}
+	.about-item {
+		&:nth-child(2) .img {
+			background: url("../img/about-1@2x.png") center/cover no-repeat;
+		}
+
+		&:nth-child(3) .img {
+			background: url("../img/about-2@2x.png") center/cover no-repeat;
+		}
+
+		&:nth-child(4) .img {
+			background: url("../img/about-3@2x.png") center/cover no-repeat;
+		}
+
+		&:nth-child(5) .img {
+			background: url("../img/about-4@2x.png") center/cover no-repeat;
+		}
+	}
+}
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	header {
+		z-index: 100;
+		.menu {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 105;
+		}
+	}
+	header nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		z-index: -1;
+		width: 15px;
+		transition: 0.2s ease-in-out;
+		&.active {
+			background-color: #000000;
+			z-index: 100;
+			width: auto;
+			ul {
+				pointer-events: visible;
+			}
+			span:first-of-type {
+				opacity: 1;
+			}
+		}
+
+		ul {
+			z-index: 100;
+			pointer-events: none;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+			padding-left: 10px;
+			li {
+				display: block;
+				text-align: right;
+				padding-right: 5px;
+				a {
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 14px;
+					display: flex;
+					align-items: center;
+					text-align: right;
+					&.active .dot {
+						background: #fed136;
+					}
+					span:first-of-type {
+						padding-right: 5px;
+						line-height: 20px;
+						opacity: 0;
+						color: #cccccc;
+						transition: 0.3s ease-in-out;
+					}
+					.dot {
+						height: 20px;
+						width: 4px;
+						background-color: #dddddd;
+						//display: none;
+						transition: 0.2s ease-in-out;
+						&.visible {
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+	}
+	.scroll-box {
+		display: none;
+	}
+	.button {
+		width: 100%;
+	}
+	#hero {
+		.title {
+			font-size: 3rem;
+		}
+		.title-description {
+			font-size: 1.5rem;
+		}
+	}
+	#services .services {
+		margin-top: 0;
+		&-item {
+			margin-top: 32px;
+			.title {
+				margin-top: 16px;
+			}
+			.text {
+				margin-top: 8px;
+			}
+		}
+	}
+	#contact #form {
+		margin-top: 32px;
+	}
+	.about-item {
+		margin-bottom: 32px;
+		&:nth-child(odd) &-text {
+			left: 0;
+			.text, .title {
+				text-align: center;
+			}
+		}
+		&:after {
+			height: 0;
+			width: 0;
+		}
+		&-text {
+			margin-top: 16px;
+			position: relative;
+			left: 0;
+			.text, .title {
+				text-align: center;
+			}
+		}
+	}
+	#contact .two .item {
+		margin-top: 30px;
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
